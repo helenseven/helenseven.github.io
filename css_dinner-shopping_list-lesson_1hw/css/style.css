@@ -76,7 +76,7 @@ h4 {
 }
 .ba-shoping-list li:hover {
   background: #625e77;
-  border-width: 5px;
+  border-width: 5px 0;
 }
 .ba-shoping-list li:active {
   background: #eb7e7f;
