@@ -1,5 +1,17 @@
+@font-face {
+ font-family: OpenSansBold;
+ src: url("../fonts/OpenSans-Bold.ttf") format("ttf"),
+}
+@font-face {
+ font-family: OpenSansRegular;
+ src: url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+}
 body {
 	line-height: 1;
+  font-family: OpenSansRegular, sans-serif;
+}
+.bold{
+  font-family: OpenSansBold, sans-serif; 
 }
 ol, ul {
 	list-style: none;
