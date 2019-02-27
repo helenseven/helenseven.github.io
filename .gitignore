@@ -1,2 +1,9 @@
 node_modules
+package-lock.json
+package.json
+src/img/*
+src/libs/*
+src/fonts/*
+node_modules
 *.zip
+.gulpfile.js

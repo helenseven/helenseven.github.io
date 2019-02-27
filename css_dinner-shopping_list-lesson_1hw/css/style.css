@@ -52,8 +52,8 @@ body {
   color: #F9F9F9;
 }
   
-.ba-header,
-.ba-footer {
+.header,
+.footer {
   text-align: center;
   background: #4A4F56;
   padding: 20px 0;
@@ -73,33 +73,38 @@ h4 {
   font-size: 25px;
   font-weight: 400;
 }
-.ba-container {
+.container {
   margin: auto;
   position: relative;
   max-width: 800px;
   padding: 40px 20px;
+  border: 2px solid transparent ;
 
 }
-.ba-shoping-list {
+.container :hover{
+  border-color: white;
+
+}
+.shoping-list {
   list-style: none;
   padding: 0;
   margin: 0 0 40px;
 }
-.ba-shoping-list li {
+.shoping-list li {
   background: #7a7593;
   border: 0 solid #fff;
 }
-.ba-shoping-list li:nth-child(odd) {
+.shoping-list li:nth-child(odd) {
   background: #88839e;
 }
-.ba-shoping-list li:hover {
+.shoping-list li:hover {
   background: #625e77;
   border-width: 5px 0;
 }
-.ba-shoping-list li:active {
+.shoping-list li:active {
   background: #eb7e7f;
 }
-.ba-shoping-list [type="checkbox"] {
+.shoping-list [type="checkbox"] {
   width: 25px;
   height: 25px;
   vertical-align: middle;
@@ -108,26 +113,26 @@ h4 {
   cursor: pointer;
   margin-right: 10px;
 }
-.ba-shoping-list [type="checkbox"]:checked + span {
+.shoping-list [type="checkbox"]:checked + span {
   text-decoration: line-through;
   color: #a3a0b5;
 }
-.ba-shoping-list [type="checkbox"]:checked + span .ba-description {
+.shoping-list [type="checkbox"]:checked + span .description {
   color: inherit;
 }
-.ba-shoping-list label {
+.shoping-list label {
   display: block;
   cursor: pointer;
   padding: 20px;
 }
-.ba-shoping-list .ba-description {
+.shoping-list .description {
   font-size: 50%;
   color: #cdcbd6;
   vertical-align: middle;
 }
-.ba-shoping-list .ba-description:before {
+.shoping-list .description:before {
   content: '(';
 }
-.ba-shoping-list .ba-description:after {
+.shoping-list .description:after {
   content: ')';
 }
