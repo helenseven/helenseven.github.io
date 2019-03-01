@@ -126,8 +126,6 @@ ul > li > a:hover
 {
     font-size: 1rem;
 
-    position: relative;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -156,17 +154,17 @@ ul > li > a:hover
     min-width: 31%; 
     margin-right: 2rem;
 }
-.roll .list__img
+.roll__item:last-child
+{
+    margin-right: 0;
+}
+.roll__item .list__img
 {
     border-radius: 50%;
 }
-.roll.list__name
+.roll__item.list__name
 {
     font-size: .75rem;
-}
-.roll:last-child
-{
-    margin-right: 2rem;
 }
 
 .list
@@ -205,7 +203,7 @@ ul > li > a:hover
 {
     margin-right: .5rem;
 }
-.list + *
+.list__img + *
 {
     font-weight: bold;
 }

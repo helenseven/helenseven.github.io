@@ -89,14 +89,11 @@ ul > li > a {
 
 .roll{
 	display: flex;
-	position: relative;
 	justify-content: space-between;
 	font-size: 1rem;
 	width: 100%;
 	padding: 0 0 0;
 	display: inline-block;
-	
-
 
 	&__title{
 		font-size: 1.5rem;
@@ -109,18 +106,21 @@ ul > li > a {
 		display: inline-block;
 		margin-right: 2rem;
 		min-width: 31%;
+
+		&:last-child{
+		margin-right: 0;
 	}
+
 	& .list__img {
 			border-radius: 50%;
 		}
 	&.list__name{
 		font-size: 0.75rem;
 	}
-	&:last-child{
-		margin-right: 2rem;
-		
-	}
 }
+}
+	
+
 
 
 .list{
@@ -131,8 +131,8 @@ ul > li > a {
 	&__item {
 		margin-bottom: .5rem;
 
-		&:last-child {
-			margin-bottom: 0;			
+		&:last-child{
+			margin-bottom: 0;
 		}
 	}
 
@@ -149,12 +149,12 @@ ul > li > a {
 		}
 	}
 
-	&__img {
+		&__img {
 		margin-right: .5rem;
-		}
-		&+*{
-			font-weight: bold
-		}
+		
 
-}
+		&+*{
+			font-weight: bold;}
+		}
+	}
 
