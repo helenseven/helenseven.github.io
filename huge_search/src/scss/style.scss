@@ -20,7 +20,7 @@ ul > li > a {
 	background-color:rgba(118,117,128,0.05);
 	text-decoration: none;
 	color: #c2c2c2;
-	padding: 0.75em;
+	padding: 0;
 	display: block;
 	font-size: 1,5rem;
 
@@ -54,12 +54,13 @@ ul > li > a {
 	font-size: 0;
 	width: 100%;
 	position: relative;
-	margin:0;
+	margin: auto;
 
 	&__input{
 		width: 100%;
-		padding: 0 80px 0 10px;
-		font-weight: 700;
+		margin-bottom: 20px;
+		padding: 0 10px 0 10px;
+		font-weight: bold;
 		border:none;
 		background: transparent;
 		font-size: 7em;
@@ -120,7 +121,7 @@ ul > li > a {
 	&__item{
 		display: inline-block;
 		margin-right: 1rem;
-		min-width: 30%;
+		min-width: 360px;
 		padding: 0 0 6em;
 		margin-bottom: .5rem
 
