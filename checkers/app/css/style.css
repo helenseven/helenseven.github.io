@@ -1,0 +1,35 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+table.board
+{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    bottom: 0;
+    left: 25%;
+
+    margin: auto; 
+
+    border-collapse: collapse;
+
+    border: 25px solid #505050;
+    background: #303030;
+}
+
+td.board
+{
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid #505050;
+}
+
+tr.board:nth-child(odd) td.board:nth-child(even),
+tr.board:nth-child(even) td.board:nth-child(odd)
+{
+    background: #e0e0e0;
+}
