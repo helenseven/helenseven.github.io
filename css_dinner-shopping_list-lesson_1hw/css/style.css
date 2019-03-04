@@ -75,7 +75,6 @@ main {
   border: 5px solid transparent;
   border-left: none;
   border-right: none;
-  cursor: pointer;
   line-height: 1;
   background: #7a7593;
 }
