@@ -1,7 +1,4 @@
 * {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -11,20 +8,14 @@ html,body {
 
 body {
   font-size: 100%;
-	line-height: 1;
   font-family: sans-serif;
   font: 400 25px/1.5 "Tebuchet MC", Tebuchet, Arial, sans-serif;
   border: 25px solid #fff;
   background-color: #3B3F45;
   color: #F9F9F9;
 }
-
-html {
-  height: 100%;
-}
   
-.header,
-.footer {
+.header{
   text-align: center;
   background: #4A4F56;
   padding: 20px 0;
@@ -42,11 +33,11 @@ h4 {
   font-weight: 400;
 }
 
-.container {
+main {
   margin: auto;
   position: relative;
   max-width: 800px;
-  padding: 40px 20px;
+  padding: 20px 20px;
   border: 2px solid transparent;
 }
 
@@ -57,12 +48,7 @@ h4 {
   list-style: none;
 }
 
-.shopping_list__item{
-  background: #7a7593;
-  border:  solid transparent;
-}
-
-.shopping_list__item:nth-child(odd) {
+.shopping_list__item:nth-child(odd) label{
   background: #88839e;
 }
 
@@ -85,15 +71,13 @@ h4 {
 }
 .shopping_list__label {
   display: block;
-  width: 100%;
-  cursor: pointer;
   padding: 15px;
-  min-height: 50px;
   border: 5px solid transparent;
   border-left: none;
   border-right: none;
   cursor: pointer;
   line-height: 1;
+  background: #7a7593;
 }
 
 .shopping_list__label:active{
@@ -118,4 +102,17 @@ margin-right: .5rem;
 }
 .shopping_list .description:after {
   content: ')';
+}
+[type="submit"]{
+    min-height: 50px;
+    width: 55%;
+    color: #eb7e7f;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #4A4F56;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
