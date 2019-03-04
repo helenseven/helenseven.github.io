@@ -2,53 +2,50 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	transition: all .1s ease-in;
+	transition: all .1s ease;
 }
 
 html, body {
-	min-height: 100%;
-	min-width: 100%;
+	width: 100%;
+	height: 100%;
 	font-size: 100%;
 	font-family: sans-serif;
 }
 
 body {
-	font: 400 20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font: 20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	background-color: #3399cc;
 	color: white;
-	border: 20px solid #2b81ac;
+	border: 1em solid #2b81ac;
 	margin: 0;
 }
 .container{
-	margin: 0 auto;
-	max-width: 80%;
+	margin: auto;
+	max-width: 100%;
 	max-height: 100%;
+	padding: 30px 0;
+	position: fixed;
 }
 
 h1{
 	text-transform: uppercase;
 	padding-bottom: 15px;
 }
-
-.container, footer {
-	padding: 30px 0;
-	vertical-align: middle;
-}
-.city, li {
-	display: inline-block;
-	text-align: center;
-	border-color: white;
-	border: 3px solid white; 
-	box-sizing: border-box;
-		}
 .city{
-	width: 80%;
-	height: 100%;
+	padding: 0;
 	background-color: white;
-	text-align:center;
 	font-size: 0;
 	border:3px solid #fff;
 }
+
+.city li {
+	display: inline-block;
+	border-color: transparent;
+	text-align: center;
+	border-color: white;
+	border: 3px solid white;
+}
+
 .city:hover > li {
  opacity: .5;
 }
@@ -59,63 +56,74 @@ h1{
 	background: white;
 }
 li {
-	padding: 20px 10px;
-	border: 3px solid #fff;
-	text-align: center;
+	padding: 0 0 ;
 	font-size: 16px;
 }
 p {
 	color: rgba(255, 255, 255, 0.6);
-padding: 10px;
+	padding: 10px;
 }
-.Lisbon {
+a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	padding: 1em 0;
+}
+
+.ls {
 	background-color: #3399cc;
-	width: 50%;
 }
 
-.Paris {
+.pr {
 	background-color: #33cccc;
-	width: 25%;
 }
 
-.Belgrade {
+.bl {
 	background-color: #996699;
-	width: 25%;
 }
 
-.Moscow {
+.ms{
 	background-color: #c24747;
-	width: 25%;
 }
 
-.TA {
+.ta{
 	background-color: #e2674a;
-	width: 25%;
 }
 
-.Cair {
+.cr {
 	background-color: #ffcc66;
-	width: 25%;
 }
 
-.NY {
+.ny {
 	background-color: #99cc99;
-	width: 25%;
+}
+.wi{
+	margin-left: .5em;
+	font-size: 1.3em;
 }
 
-.ND {
+.nd {
 	background-color: #669999;
-	width: 25%;
 }
-.SF {
+.sf {
 	background-color: #cc6699;
+}
+.tk {
+	background-color: #339966;
+}
+.sd{
+	background-color: #666699;
+	}
+
+.city .long{
+	width: 100%;
+}
+
+.city .mid{
 	width: 50%;
 }
-.Tokyo {
-	background-color: #339966;
+
+.city .small{
 	width: 25%;
-}
-.Sydney {
-	background-color: #666699;
-	width: 100%;
 }
