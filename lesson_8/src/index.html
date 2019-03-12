@@ -6,8 +6,7 @@
     <title>Foliac</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,27 +22,27 @@
             <nav class="navigation">
                 <ul class="menu">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">accueli</a>
+                        <a href="#first-screen" class="menu__link">accueli</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">portfolio</a>
+                        <a href="#portfolio" class="menu__link">portfolio</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">about</a>
+                        <a href="#about" class="menu__link">about</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">contact</a>
+                        <a href="#contacts" class="menu__link">contact</a>
                     </li>
                 </ul>
-            </nav>    
+            </nav>  
         </div>
-
+        
     </div>
     <!-- END TOP LINE -->
 
     <!-- first screen -->
 
-    <header class="first-screen">
+    <header class="first-screen" id="first-screen">
         <div class="container">
 
             <div class="row">
@@ -56,8 +55,8 @@
     </header>
 
     <!-- end first screen -->
-
-    <section class="portfolio">
+    
+    <section class="portfolio" id="portfolio">
         <div class="container">
 
             <div class="row">
@@ -113,45 +112,76 @@
                 </ul>
             </div>
 
-        </div>    
+        </div>  
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="about__block">
                     <h2 class="about__title">
-                        Michel Dupon
+                        Michel Dupont
                     </h2>
-                    <p class="about__prof">
-                    Webdesiner, illustrator, auteur</p>
-                    <p class="about__text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit culpa, officiis modi suscipit, nostrum molestias ullam ipsam, minima quisquam adipisci cumque ad accusantium ipsa error ut. Vel ipsa deleniti omnis soluta aperiam, labore quae odio, earum nisi, maiores quas adipisci!
+                    <p class="about__prof">Webdesigner, illustrateur, auteur</p>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab, perferendis earum accusamus, sunt error! Asperiores tenetur nobis commodi aliquam consequatur inventore eveniet. Labore, odit similique voluptas non. Sequi rem distinctio, voluptatibus consectetur assumenda cumque. Officia possimus, voluptatum dolorem quo.
                     </p>
-                    <a class="about__btn" href="#contacts">
-                        me contacter
-                    </a>
+                    <a class="about__btn" href="#contacts">me contacter</a>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <footer class="footer">
+    <section class="contacts" id="contacts">
         <div class="container">
-            <div class="row">
-
+            <h2 class="contacts__title">Me contacter</h2>
+            <form action="" class="contacts__form">
+                <div class="input-row">
+                    <label for="1" class="contacts__label">
+                    <input type="text" id="1" class="contacts__input" placeholder="Votre nom">
+                </label>
+                <label for="2" class="contacts__label">
+                    <input type="text" id="2" class="contacts__input" placeholder="Votre email">
+                </label>
             </div>
+
+            <label for="3" class="contacts__textarea-label">
+                <textarea class="contacts__textarea" name="" id="3" placeholder="Votre message"></textarea>
+            </label>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+      <p class="footer__copyrights">
+        Copyright © 2015 by beneggen -&nbsp;
+        <a href="#">www.beneggen.fr</a>
+      </p>
+
+      <nav class="social">
+        <ul class="social__menu">
+          <li class="social__item">
+            <a href="#" class="social__link twitter" target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link linkedin" target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link dribbble" target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link behance" target="_blank"></a>
+          </li>
+        </ul>
+      </nav>
+
         </div>
-    </footer>
-
-
-
-</body>
-</html>
+    </div>
+</footer>
 
 </body>
 </html>
-
-<!--<i class="fas fa-pencil-alt"></i>-->
-<!--<i class="fas fa-user"></i>-->
-<!--<i class="fas fa-envelope"></i>-->

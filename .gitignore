@@ -1,9 +1,11 @@
+template
+.csscomb.json
 node_modules
 package-lock.json
 package.json
-src/img/*
-src/libs/*
-src/fonts/*
-node_modules
+src/img/**/*.*
+src/libs/**/*.*
+src/fonts/**/*.*
 *.zip
 .gulpfile.js
+*.psd

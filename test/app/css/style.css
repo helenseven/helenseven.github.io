@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100vh;
+}
+
+body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+label {
+	display: inline-block;
+	position: relative;
+}
+label::after {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid white;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	-webkit-transition: rotate(45deg);
+	        transition: rotate(45deg);
+	-webkit-transform: translate(-50%);
+	        transform: translate(-50%);
+	top: 50%;
+	right: 0;
+}
+label > * {
+	font-size: 48px;
+	background-color: black;
+	color: white;
+	padding: 10px 50px 10px 10px;
+}
+
+select {
+	-webkit-appearance: none;
+	position: relative;
+}
